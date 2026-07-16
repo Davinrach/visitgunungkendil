@@ -52,26 +52,26 @@ export function HeroSection() {
   }
 
   const FloatingCardContent = () => (
-    <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-5 rounded-xl shadow-medium w-full md:w-72">
-      <div className="flex flex-col gap-3.5">
-        <div className="flex items-center gap-3">
-          <Mountain className="w-5 h-5 text-accent" aria-hidden="true" />
-          <span className="text-white text-sm font-semibold tracking-wide">View Lawu & Bengawan Solo</span>
+    <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-4 md:p-5 rounded-xl shadow-medium w-full md:w-72">
+      {/* Mobile: 2x2 compact grid | Desktop: vertical list */}
+      <div className="grid grid-cols-2 md:grid-cols-1 gap-3 md:gap-3.5">
+        <div className="flex items-center gap-2.5">
+          <Mountain className="w-4 h-4 md:w-5 md:h-5 text-accent flex-shrink-0" aria-hidden="true" />
+          <span className="text-white text-xs md:text-sm font-semibold tracking-wide leading-tight">View Lawu &amp; Bengawan Solo</span>
         </div>
-        <div className="h-px bg-white/10 w-full" />
-        <div className="flex items-center gap-3">
-          <Sun className="w-5 h-5 text-accent" aria-hidden="true" />
-          <span className="text-white text-sm font-semibold tracking-wide">Spot Sunrise & Sunset</span>
+        <div className="flex items-center gap-2.5">
+          <Sun className="w-4 h-4 md:w-5 md:h-5 text-accent flex-shrink-0" aria-hidden="true" />
+          <span className="text-white text-xs md:text-sm font-semibold tracking-wide leading-tight">Spot Sunrise &amp; Sunset</span>
         </div>
-        <div className="h-px bg-white/10 w-full" />
-        <div className="flex items-center gap-3">
-          <Store className="w-5 h-5 text-accent" aria-hidden="true" />
-          <span className="text-white text-sm font-semibold tracking-wide">Area Pasar Tradisional Bantar</span>
+        <div className="hidden md:block h-px bg-white/10 w-full col-span-1" />
+        <div className="hidden md:block h-px bg-white/10 w-full col-span-1" />
+        <div className="flex items-center gap-2.5">
+          <Store className="w-4 h-4 md:w-5 md:h-5 text-accent flex-shrink-0" aria-hidden="true" />
+          <span className="text-white text-xs md:text-sm font-semibold tracking-wide leading-tight">Pasar Tradisional Bantar</span>
         </div>
-        <div className="h-px bg-white/10 w-full" />
-        <div className="flex items-center gap-3">
-          <Camera className="w-5 h-5 text-accent" aria-hidden="true" />
-          <span className="text-white text-sm font-semibold tracking-wide">Spot Foto Instagramable</span>
+        <div className="flex items-center gap-2.5">
+          <Camera className="w-4 h-4 md:w-5 md:h-5 text-accent flex-shrink-0" aria-hidden="true" />
+          <span className="text-white text-xs md:text-sm font-semibold tracking-wide leading-tight">Spot Foto Instagramable</span>
         </div>
       </div>
     </div>
@@ -128,7 +128,7 @@ export function HeroSection() {
               variants={fadeInUpVariants}
               initial="hidden"
               animate="visible"
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-extrabold tracking-tight max-w-3xl leading-[1.12] mb-6 text-white text-shadow"
+              className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-heading font-extrabold tracking-tight max-w-3xl leading-[1.12] mb-5 text-white text-shadow"
             >
               Gunung Kendil <br />
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-white via-secondary to-accent">
@@ -142,7 +142,7 @@ export function HeroSection() {
               variants={fadeInUpVariants}
               initial="hidden"
               animate="visible"
-              className="text-base sm:text-lg md:text-xl text-white/80 max-w-2xl font-body mb-10 leading-relaxed"
+              className="text-sm sm:text-base md:text-xl text-white/80 max-w-2xl font-body mb-8 leading-relaxed"
             >
               Nikmati panorama Gunung Lawu dan liukan Sungai Bengawan Solo dari puncak bukit di Desa Jatimulyo, Mantingan, Ngawi.
             </motion.p>
@@ -153,14 +153,14 @@ export function HeroSection() {
               variants={fadeInUpVariants}
               initial="hidden"
               animate="visible"
-              className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto"
+              className="flex flex-row items-center gap-3 w-full sm:w-auto"
             >
               <PrimaryButton
                 aria-label="Lihat Galeri Foto Gunung Kendil"
                 onClick={() => handleScrollTo("galeri")}
-                className="w-full sm:w-auto gap-2 px-8 py-3.5 text-base"
+                className="w-auto gap-2 px-6 py-3 text-sm sm:px-8 sm:py-3.5 sm:text-base"
               >
-                <Map className="w-5 h-5" />
+                <Map className="w-4 h-4 sm:w-5 sm:h-5" />
                 Lihat Galeri
               </PrimaryButton>
             </motion.div>
@@ -171,7 +171,7 @@ export function HeroSection() {
               variants={fadeInVariants}
               initial="hidden"
               animate="visible"
-              className="block md:hidden mt-10 w-full"
+              className="block md:hidden mt-6 w-full"
             >
               <FloatingCardContent />
             </motion.div>
