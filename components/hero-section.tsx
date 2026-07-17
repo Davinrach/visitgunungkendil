@@ -80,7 +80,7 @@ export function HeroSection() {
   return (
     <section 
       id="beranda" 
-      className="relative h-screen min-h-[700px] w-full flex items-center overflow-hidden bg-black"
+      className="relative h-screen h-[100dvh] min-h-[600px] sm:min-h-[700px] w-full flex items-center overflow-hidden bg-black"
       aria-label="Hero Section"
     >
       {/* Background Image with Zoom Animation */}
@@ -199,7 +199,8 @@ export function HeroSection() {
         initial="hidden"
         animate="visible"
         onClick={() => handleScrollTo("tentang")}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 cursor-pointer text-white/50 hover:text-white transition-colors"
+        style={{ x: "-50%" }}
+        className="absolute bottom-8 left-1/2 z-20 flex flex-col items-center gap-2 cursor-pointer text-white/50 hover:text-white transition-colors"
       >
         <span className="text-xs font-body font-medium tracking-widest uppercase">Scroll to Explore</span>
         <motion.div

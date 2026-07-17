@@ -39,9 +39,11 @@ export function GallerySection() {
     {
       id: 3,
       images: [
-        "/images/gallery_pasar_bantar.png",
-        "/images/gallery_pasar_bantar_2.png",
-        "/images/gallery_pasar_bantar_3.png"
+        "/images/pasar bantar/WhatsApp Image 2026-07-17 at 7.25.17 PM.jpeg",
+        "/images/pasar bantar/WhatsApp Image 2026-07-17 at 7.25.18 PM.jpeg",
+        "/images/pasar bantar/WhatsApp Image 2026-07-17 at 7.25.18 PM (1).jpeg",
+        "/images/pasar bantar/WhatsApp Image 2026-07-17 at 7.25.18 PM (2).jpeg",
+        "/images/pasar bantar/WhatsApp Image 2026-07-17 at 7.25.19 PM.jpeg"
       ],
       alt: "Suasana pasar tradisional tempo dulu di bawah kerindangan pepohonan Gunung Kendil",
       title: "Pasar Tradisional Bantar",
@@ -49,10 +51,42 @@ export function GallerySection() {
     },
     {
       id: 4,
-      images: ["/images/gallery_tracking.png"],
+      images: ["/images/jalur pohon jati/WhatsApp Image 2026-07-17 at 7.25.15 PM.jpeg"],
       alt: "Jalur setapak trekking rimbun pepohonan jati menuju puncak Gunung Kendil",
       title: "Jalur Hutan Jati (Trekking Path)",
       category: "Petualangan"
+    },
+    {
+      id: 5,
+      images: [
+        "/images/peresmian gunung kendil/WhatsApp Image 2026-07-17 at 7.25.11 PM.jpeg",
+        "/images/peresmian gunung kendil/WhatsApp Image 2026-07-17 at 7.25.12 PM.jpeg",
+        "/images/peresmian gunung kendil/WhatsApp Image 2026-07-17 at 7.25.12 PM (1).jpeg",
+        "/images/peresmian gunung kendil/WhatsApp Image 2026-07-17 at 7.25.12 PM (2).jpeg"
+      ],
+      alt: "Dokumentasi acara peresmian ekowisata Gunung Kendil oleh Bupati Ngawi, ditandai dengan penanaman pohon simbolis di puncak bukit.",
+      title: "Peresmian Gunung Kendil",
+      category: "Sejarah & Dokumentasi"
+    },
+    {
+      id: 6,
+      images: [
+        "/images/sumpah pemuda/WhatsApp Image 2026-07-17 at 7.25.13 PM.jpeg",
+        "/images/sumpah pemuda/WhatsApp Image 2026-07-17 at 7.25.13 PM (1).jpeg",
+        "/images/sumpah pemuda/WhatsApp Image 2026-07-17 at 7.25.13 PM (2).jpeg",
+        "/images/sumpah pemuda/WhatsApp Image 2026-07-17 at 7.25.14 PM.jpeg",
+        "/images/sumpah pemuda/WhatsApp Image 2026-07-17 at 7.25.14 PM (1).jpeg"
+      ],
+      alt: "Dokumentasi peringatan Hari Sumpah Pemuda di puncak Gunung Kendil bersama pemuda desa dan masyarakat.",
+      title: "Peringatan Sumpah Pemuda",
+      category: "Sejarah & Dokumentasi"
+    },
+    {
+      id: 7,
+      images: ["/images/atv/WhatsApp Image 2026-07-17 at 7.25.14 PM.jpeg"],
+      alt: "Petualangan seru mengendarai ATV menjelajahi jalur menantang di kawasan ekowisata Gunung Kendil.",
+      title: "Wahana ATV & Mobil Listrik",
+      category: "Aktivitas"
     }
   ]
 
@@ -125,7 +159,7 @@ export function GallerySection() {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {galleryItems.map((item) => (
             <motion.div
               key={item.id}
