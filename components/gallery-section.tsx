@@ -24,17 +24,17 @@ export function GallerySection() {
   const galleryItems: GalleryItem[] = [
     {
       id: 1,
-      images: ["/images/gallery_drone.png"],
-      alt: "Pemandangan aerial kelokan Sungai Bengawan Solo yang mengitari bukit hijau Gunung Kendil",
-      title: "Kelokan Bengawan Solo (Drone View)",
+      images: ["/images/Bengawan Solo/IMG_0731.JPG"],
+      alt: "Pemandangan indah kelokan Sungai Bengawan Solo yang mengitari bukit hijau Gunung Kendil",
+      title: "Kelokan Bengawan Solo",
       category: "Bentang Alam"
     },
     {
       id: 2,
-      images: ["/images/gallery_sunrise.png"],
-      alt: "Matahari terbit keemasan menyinari lembah berkabut di puncak Gunung Kendil",
-      title: "Fajar Keemasan (Golden Sunrise)",
-      category: "Matahari Terbit"
+      images: ["/images/sunset/IMG_0682.JPG"],
+      alt: "Matahari terbenam keemasan menyinari langit senja di puncak Gunung Kendil",
+      title: "Senja Keemasan (Golden Sunset)",
+      category: "Matahari Terbenam"
     },
     {
       id: 3,

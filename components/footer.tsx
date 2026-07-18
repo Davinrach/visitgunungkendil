@@ -26,9 +26,7 @@ export function Footer() {
   }
 
   const socialLinks = [
-    { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
-    { icon: Facebook, href: "https://facebook.com", label: "Facebook" },
-    { icon: Youtube, href: "https://youtube.com", label: "YouTube" }
+    { icon: Youtube, href: "https://youtube.com/@mascarik3679?si=QXk751ky3OF-6gzP", label: "YouTube" }
   ]
 
   const navLinks = [
@@ -104,20 +102,12 @@ export function Footer() {
                 <p className="font-semibold text-white/90">Kelompok Sadar Wisata (Pokdarwis)</p>
                 <p className="text-white/60">Kecamatan Mantingan, Ngawi</p>
                 <a
-                  href="https://wa.me/6281253285399?text=Halo%2C%20Saya%20ingin%20bertanya%20mengenai%20wisata%20Gunung%20Kendil%20Jatimulyo"
+                  href="https://wa.me/6283865381608?text=Halo%2C%20Saya%20ingin%20bertanya%20mengenai%20wisata%20Gunung%20Kendil%20Jatimulyo"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-accent hover:underline mt-1 transition-all duration-200"
                 >
-                  +62 812-5328-5399 (Bu Nanik)
-                </a>
-                <a
-                  href="https://wa.me/6282229150822?text=Halo%2C%20Saya%20ingin%20bertanya%20mengenai%20wisata%20Gunung%20Kendil%20Jatimulyo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block text-accent hover:underline mt-1 transition-all duration-200"
-                >
-                  +62 822-2915-0822 (Bu Rita)
+                  +62 838-6538-1608 (Ali Nur Hidayat)
                 </a>
               </div>
             </li>
